@@ -1,0 +1,225 @@
+REM "Graphs to show a picture for the song "America the Beautiful".
+CLS
+SCREEN 1, 1
+COLOR 1, 1
+LINE (0, 140)-(0, 0), 1
+LINE -(319, 0), 1
+LINE -(319, 72), 1
+LINE (0, 140)-(319, 140), 1
+LINE (319, 140)-(319, 72), 1
+PAINT (160, 20), 1
+LINE (0, 140)-(150, 50), 2
+LINE (150, 50)-(200, 100), 2
+LINE -(230, 60), 2
+LINE -(240, 70), 2
+LINE -(260, 50), 2
+LINE -(280, 80), 2
+LINE -(300, 50), 2
+LINE -(319, 73), 2
+LINE (0, 140)-(319, 140), 2
+LINE (319, 72)-(319, 140), 2
+PAINT (140, 100), 2
+CIRCLE (80, 140), 20, 0
+PAINT (80, 140), 0
+CIRCLE (88, 140), 20, 2
+PAINT (88, 140), 2
+CIRCLE (180, 140), 20, 0
+PAINT (180, 140), 0
+CIRCLE (188, 140), 20, 2
+PAINT (188, 140), 2
+CIRCLE (290, 140), 20, 0
+PAINT (290, 140), 0
+CIRCLE (298, 140), 20, 2
+PAINT (298, 140), 2
+LINE (0, 140)-(319, 199), 0, BF
+REM LOCATE 3, 13
+REM PRINT "America the"
+REM LOCATE 4, 14
+REM PRINT "Beautiful"
+LINE (222, 70)-(230, 60), 3
+LINE -(240, 70), 3
+REM LINE -(222, 70), 3
+LINE (222, 70)-(230, 76), 3
+LINE -(240, 70), 3
+PAINT (230, 65), 3
+
+LINE (150, 50)-(150, 60), 3
+LINE (150, 60)-(140, 56), 3
+LINE -(150, 50), 3
+PAINT (149, 51), 3
+LINE (150, 50)-(158, 56), 3
+LINE -(150, 60), 3
+PAINT (151, 53), 3
+
+LINE (250, 60)-(260, 50), 3
+LINE -(268, 61), 3
+LINE (260, 64)-(268, 61), 3
+LINE -(268, 61), 3
+LINE (260, 64)-(250, 60), 3
+PAINT (255, 60), 3
+
+LINE (293, 60)-(300, 50), 3
+LINE -(310, 60), 3
+LINE (300, 63)-(310, 60), 3
+LINE (300, 63)-(293, 60), 3
+PAINT (300, 60), 3
+
+FOR column = 1 TO 15
+LOCATE 20, column
+PRINT "    America"
+FOR pause = 1 TO 120: NEXT pause
+NEXT column
+
+FOR column = 1 TO 15
+LOCATE 21, column
+PRINT " The Beautiful"
+FOR pause = 1 TO 120: NEXT pause
+NEXT column
+
+0 FOR p = 1 TO 2
+1 REM "Music for the song America the Beautiful"
+10 SOUND 392, 8: REM O:
+15 SOUND 30000, 1: REM silence:
+20 SOUND 392, 12: REM beau
+30 SOUND 330, 4: REM ti
+40 SOUND 30000, 1: REM silence
+50 SOUND 330, 8: REM ful
+60 SOUND 392, 8: REM for
+1170 SOUND 30000, 1: REM silence
+80 SOUND 392, 12: REM spa
+90 SOUND 294, 4: REM cious
+100 SOUND 30000, 1: REM silence
+110 SOUND 294, 8: REM skies
+120 SOUND 330, 8: REM For
+130 SOUND 350, 8: REM am
+140 SOUND 392, 8: REM ber
+150 SOUND 440, 8: REM waves
+160 SOUND 492, 8: REM of
+170 SOUND 392, 24: REM grain
+180 SOUND 30000, 1: REM silence
+190 SOUND 392, 8: REM For
+200 SOUND 30000, 1: REM silence
+210 SOUND 392, 12: REM pur
+220 SOUND 330, 4: REM ple
+230 SOUND 30000, 1: REM silence
+240 SOUND 330, 8: REM moun
+245 SOUND 392, 8: REM tain
+246 SOUND 30000, 1: REM silence
+250 SOUND 392, 12: REM maj
+260 SOUND 294, 4: REM es
+270 SOUND 30000, 1: REM silence
+280 SOUND 294, 8: REM ties
+290 SOUND 588, 8: REM A
+300 SOUND 550, 8: REM bove
+310 SOUND 588, 8: REM the
+320 SOUND 660, 8: REM fruit
+330 SOUND 440, 8: REM ed
+340 SOUND 588, 24: REM plain
+350 SOUND 392, 8: REM A
+360 SOUND 660, 12: REM mer
+370 SOUND 30000, 1: REM silence
+380 SOUND 660, 4: REM i
+390 SOUND 588, 8: REM ca!
+400 SOUND 512, 8: REM A
+410 SOUND 30000, 1: REM silence
+420 SOUND 512, 12: REM mer
+430 SOUND 492, 4: REM i
+440 SOUND 30000, 1: REM silence
+450 SOUND 492, 8: REM ca!
+460 SOUND 512, 8: REM God
+470 SOUND 588, 8: REM shed
+480 SOUND 492, 8: REM his
+490 SOUND 440, 8: REM grace
+500 SOUND 392, 8: REM on
+510 SOUND 512, 24: REM thee
+520 SOUND 30000, 1: REM silence
+530 SOUND 512, 8: REM And
+540 SOUND 30000, 1: REM silence
+550 SOUND 512, 12: REM crown
+560 SOUND 440, 4: REM thy
+570 SOUND 30000, 1: REM silence
+580 SOUND 440, 8: REM good
+590 SOUND 512, 8: REM with
+600 SOUND 30000, 1: REM silence
+610 SOUND 512, 12: REM broth
+620 SOUND 392, 4: REM er
+630 SOUND 30000, 1: REM silence
+640 SOUND 392, 8: REM hood
+650 SOUND 30000, 1: REM silence
+670 SOUND 392, 8: REM from
+680 SOUND 440, 8: REM sea
+690 SOUND 512, 8: REM to
+700 SOUND 392, 8: REM shin
+710 SOUND 588, 8: REM ing
+720 SOUND 512, 24: REM sea
+730 NEXT p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

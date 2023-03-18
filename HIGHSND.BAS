@@ -1,0 +1,7 @@
+CLS
+FOR s = 1000 TO 30000 STEP 100
+SOUND s, 8
+NEXT s
+
+
+
